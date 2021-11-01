@@ -1,13 +1,64 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+body {
+  background-color: #D5E5F2;
+  margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.navbar {
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.navbar-left {
+  display: flex;
+}
+.navbar-left.div {
+  padding-right: 25px;
+}
+.navbar-right {
+  align-content: center;
+}
+.title {
+  font-size: 32px;
+  color: #123C73;
+  padding-left: 25px;
+}
+
+.navLinks {
+  text-align: center;
+  padding-left: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #7595BF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+navLinks:hover {
+  color: #123C73;
+}
+
+
+.containerBody {
+  width: 90%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+.containerElements {
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
