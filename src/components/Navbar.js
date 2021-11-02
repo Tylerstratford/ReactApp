@@ -10,7 +10,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-right">
                 <NavLink className = "navLinks" to="/Home">Home</NavLink>
-                <NavLink ClassName = "navLinks" style={{textDecoration: 'none'}} to="/ShowCustomers">Show Customers</NavLink>
+                <NavLink className = "navLinks" to="/ShowCustomers">Show Customers</NavLink>
                 <NavLink className = "navLinks" to="/AddCustomers">Add Customers</NavLink>
             </div>
         </nav>

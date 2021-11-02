@@ -44,7 +44,7 @@ body {
   text-decoration: none;
 }
 
-navLinks:hover {
+.navLinks:hover {
   color: #123C73;
 }
 
@@ -62,3 +62,29 @@ navLinks:hover {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+.card {
+  width: 350px;
+  height: 150px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftCard {
+  text-align: center;
+}
+
+.rightCard {
+  text-align: center;
+}
+
+.customerIcon {
+  font-size: 50px;
+  color: #123C73;
+}
+
+
