@@ -64,8 +64,8 @@ body {
 }
 
 .card {
-  width: 350px;
-  height: 150px;
+  width: 450px;
+  height: 200px;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
@@ -82,8 +82,12 @@ body {
   text-align: center;
 }
 
+.rightCard p {
+  color: #A67437;
+}
+
 .customerIcon {
-  font-size: 50px;
+  font-size: 100px;
   color: #123C73;
 }
 
