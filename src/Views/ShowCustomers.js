@@ -1,6 +1,8 @@
 import React from 'react'
-import Customer from '../components/Customer'
+import CustomerList from '../components/Customer'
+import Search from '../components/Search';
 import { useState, useEffect } from 'react';
+
 const ShowCustomers = () => {
 
     const [customer, setCustomers] = useState([])
@@ -18,15 +20,20 @@ const ShowCustomers = () => {
         
         
         <div className="containerElements">
-            <h1 className="title">Show customers</h1>
-            {
-          customer.map(customers => (
-            <div key={customers.id}>
-                <Customer  item={customers} />
+            <div className="top">
+                <h1 className="title">Customer Registry</h1>
+                <Search />
             </div>
-          ))
-        }
-            {/* <Customer /> */}
+            <div className ="customerGrid">
+                {
+            customer.map(customers => (
+                <div key={customers.id}>
+                    <CustomerList  item={customers} />
+                </div>
+                ))
+            }
+            </div>
+            <footer className="footer"></footer>
         </div>
     )
 }

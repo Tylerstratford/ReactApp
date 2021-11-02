@@ -1,16 +1,17 @@
 import React from 'react'
 
-const Customer = ({item}) => {
+const CustomerList = ({item}) => {
     return (
         <div className="containerElements">
             <div className="card">
                 <div className="leftCard"> 
                     <i className="fas fa-user customerIcon"></i>
+                    <i className="fad fa-stars customerStar"></i>
                 </div>
                 <div className="rightCard"> 
-                    <p>First name: {item.firstName} </p>
-                    <p>Last name: {item.lastName} </p>
-                    <p>Email: {item.email} </p>
+                    <h2>Contact info: </h2>
+                    <p>{item.firstName} {item.lastName} </p>
+                    <p>{item.email} </p>
                 </div>
 
             </div>
@@ -18,4 +19,4 @@ const Customer = ({item}) => {
     )
 }
 
-export default Customer
+export default CustomerList
