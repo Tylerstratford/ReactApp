@@ -21,7 +21,7 @@ const ShowCustomers = () => {
         
         <div className="containerElements">
             <div className="top">
-                <h1 className="title">Customer Registry</h1>
+                <h1 className="title">Customer Register</h1>
                 <Search />
             </div>
             <div className ="customerGrid">

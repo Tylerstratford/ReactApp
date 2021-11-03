@@ -11,7 +11,6 @@ body {
   margin: 0;
 }
 
-
 .navbar {
   display: flex;
   padding-top: 15px;
@@ -20,16 +19,20 @@ body {
   padding-right: 25px;
   align-items: center;
 }
+
 .navbar-left {
   display: flex;
   align-items: center;
 }
+
 .navbar-left.div {
   padding-right: 25px;
 }
+
 .navbar-right {
   align-content: center;
 }
+
 .title {
   font-size: 32px;
   color: #123C73;
@@ -70,6 +73,7 @@ body {
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid transparent;
 }
 
 .containerElements {
@@ -164,4 +168,88 @@ body {
 ::placeholder {
   opacity: 0.8;
   color: rgb(123, 74, 214);
+}
+
+/* Form - Add customer */
+
+.containerCard {
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center;
+}
+
+.cardCustomer {
+  width: 750px;
+  height: 450px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* transition: all 0.5s ease; */
+}
+
+.leftCardCustomer {
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.leftCardCustomer h2{
+  color: #123C73;
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+.rightCardCustomer {
+  text-align: left;
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.rightCardCustomer input {
+  margin-bottom: 10px;
+}
+
+.rightCardCustomer h2 {
+  color: #123C73;
+  font-size: 1.05rem;
+}
+
+.customerIconCustomer {
+  font-size: 17rem;
+  color: #123C73;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.customerStarCustomer {
+  padding-right: 25px;
+  font-size: 5rem;
+  position: absolute;
+  right: -10px;
+  top: -30px;
+  color: #8379D9;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.button {
+  width: 150px;
+  height: 45px;
+  outline: none;
+  border: none;
+  color: #8379D9;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
+  background-color: #8379D9;
 }
