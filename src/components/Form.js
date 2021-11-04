@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import validation from './validation';
-import submit from './submit';
 const Form = () => {
 
     const [values, setValues] = useState ({

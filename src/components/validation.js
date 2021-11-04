@@ -1,5 +1,4 @@
-import React from 'react'
-
+import Form from "./Form";
 const validation = (values) => {
 
     let errors = {};
@@ -46,23 +45,27 @@ const validation = (values) => {
 
     if(isValid) {
         console.log('time to post')
-        let json = JSON.stringify({ firstName: `${firstname.value}`, lastName: `${values.lastname.value}`, email: `${values.emaail.value}` })
-
+        let data = JSON.stringify({ 
+            firstName: values.firstname, 
+            lastName: values.lastname, 
+            email: values.email})
+    
         async function fetchData() {
             await fetch('https://ecexam-webapi.azurewebsites.net/api/Customers', {
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 method: 'post',
-                body: json
+                body: data
             })
         }
 
         fetchData();
-        
+
     } else {
         console.log('still not valid')
     }
+
 
     return errors;
 
