@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import validation from './validation';
+import submit from './submit';
 const Form = () => {
 
     const [values, setValues] = useState ({
@@ -8,19 +9,18 @@ const Form = () => {
         email: "",
     })
 
-    const handelFormSubmit = (event) => {
-        event.preventDefault();
-        setErrors(validation(values));
-    }
-
-    const [errors, setErrors] = useState({});
-
-    
     const handleChange = (event) => {
         setValues({
             ...values,
             [event.target.name]: event.target.value,
         })
+    }
+
+    const [errors, setErrors] = useState({});
+
+    const handelFormSubmit = (event) => {
+        event.preventDefault();
+        setErrors(validation(values));
     }
 
     const error = {
