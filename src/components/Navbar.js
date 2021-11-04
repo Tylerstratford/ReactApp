@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <i class="fad fa-atom logo"></i>
+                <i className="fad fa-atom logo"></i>
                 <div className="navLeftText">Atoms. Register with care</div>
             </div>
             <div className="navbar-right">

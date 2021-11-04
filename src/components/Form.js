@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Form = () => {
+
     return (
         <div className="containerCard">
             <div className="cardCustomer">
@@ -10,13 +11,27 @@ const Form = () => {
                     {/* <i className="fad fa-stars customerStar"></i> */}
                 </div>
                 <div className="rightCardCustomer"> 
-                    <h2>Contact info </h2>
-                    <input className ="search" type="text" placeholder = "First name: " />
-                    <input className = "search" type="text" placeholder = "Last name: "/>
-                    <input className = "search" type="text" placeholder = "Email adress:" />
-                    <input className = "button" id="button" type="submit" placeholder = "submit" />
+                    <form className="form">
+                        <h2>Contact info </h2>
+                        <input 
+                            className = "search" 
+                            id="firstName"
+                            type="text" 
+                            placeholder = "First name: " 
+                        />
+                        <input 
+                            className = "search" 
+                            type="text"
+                            placeholder = "Last name: "
+                        />
+                        <input 
+                            className = "search" 
+                            type="email"
+                            placeholder = "Email adress:" 
+                        />
+                        <button className = "button" id="button" type='submit'>Submit </button>
+                    </form>
                 </div>
-
             </div>
         </div>
     )

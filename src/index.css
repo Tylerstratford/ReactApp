@@ -160,14 +160,20 @@ body {
   background-color: transparent;
   outline: none;
   border: none;
-  /* padding-left: 10px; */
   letter-spacing: 2px;
-  border-bottom: 1.5px solid rgb(123, 74, 214);
+  border-bottom: 1.5px solid #8379D9;
+}
+
+.search:hover {
+  border-bottom: 1.5px solid #123C73;
+}
+
+.search:focus {
+  border-bottom: 1.5px solid #123C73;
 }
 
 ::placeholder {
   opacity: 0.8;
-  color: rgb(123, 74, 214);
 }
 
 /* Form - Add customer */
@@ -203,21 +209,25 @@ body {
 }
 
 .rightCardCustomer {
-  text-align: left;
-  margin-top: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
   width: 50%;
   display: flex;
+}
+
+.form {
+  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 70%;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.rightCardCustomer input {
-  margin-bottom: 10px;
+.form input {
+  margin-bottom: 20px;
 }
 
-.rightCardCustomer h2 {
+.form h2 {
   color: #123C73;
   font-size: 1.05rem;
 }
@@ -225,16 +235,6 @@ body {
 .customerIconCustomer {
   font-size: 17rem;
   color: #123C73;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-}
-
-.customerStarCustomer {
-  padding-right: 25px;
-  font-size: 5rem;
-  position: absolute;
-  right: -10px;
-  top: -30px;
-  color: #8379D9;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
