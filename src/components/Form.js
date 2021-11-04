@@ -39,7 +39,7 @@ const Form = () => {
                     <form className="form">
                         <h2>Contact info </h2>
                         <input 
-                            className = "search" 
+                            className = "customerInput" 
                             name="firstname"
                             value={values.firstname}
                             type="text" 
@@ -49,7 +49,7 @@ const Form = () => {
                         {errors.firstname && <p style={error}> {errors.firstname} </p>}
 
                         <input 
-                            className = "search"
+                            className = "customerInput"
                             name="lastname" 
                             value={values.lastname}
                             type="text"
@@ -58,7 +58,7 @@ const Form = () => {
                         />
                         {errors.lastname && <p style={error}> {errors.lastname}</p>}
                         <input 
-                            className = "search" 
+                            className = "customerInput" 
                             name="email"
                             value={values.email}
                             type="email"

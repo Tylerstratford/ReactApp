@@ -1,4 +1,4 @@
-import Form from "./Form";
+
 const validation = (values) => {
 
     let errors = {};
@@ -27,7 +27,7 @@ const validation = (values) => {
         console.log(`last name: ${lastNameValid}`)
         validCounter++
     }
-
+    
     if(!regExEmail.test(values.email)) {
         errors.email="Email is invalid"
         console.log(`Email: ${emailValid}`)
@@ -44,7 +44,7 @@ const validation = (values) => {
     console.log(isValid)
 
     if(isValid) {
-        console.log('time to post')
+        alert('Customer Added!')
         let data = JSON.stringify({ 
             firstName: values.firstname, 
             lastName: values.lastname, 
