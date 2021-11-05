@@ -16,9 +16,9 @@ function App() {
         <BrowserRouter> 
           <Navbar />
           <Switch>
-            <Route path="/Home" exact component={Home} />
             <Route path="/addcustomers" exact component={AddCustomers} />
             <Route path="/showcustomers" exact component={ShowCustomers} />
+            <Route path="/" exact component={Home} />
           </Switch>
         </BrowserRouter>
       </div>

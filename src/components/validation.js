@@ -2,13 +2,14 @@
 const validation = (values) => {
 
     let errors = {};
-    let regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    let regExName = /^(?=(?:[^A-Za-z]*[A-Za-z]){2})(?![^\d~`?!^*¨ˆ;@=$%{}\[\]|\\\/<>#“.,]*[\d~`?!^*¨ˆ;@=$%{}\[\]|\\\/<>#“.,])\S+(?: \S+){0,2}$/;
+    let regExEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i;
+    let regExName = /^(?=(?:[^A-Za-z]*[A-Za-z]){2})(?![^\d~`?!^*¨ˆ;@=$%{}\[\]|\\\/<>#“.,]*[\d~`?!^*¨ˆ;@=$%{}\[\]|\\\/<>#“.,])\S+(?: \S+){0,2}$/i;
     let firstNameValid = false;
     let lastNameValid = false;
     let emailValid = false;
     let isValid = false;
     let validCounter = 0
+
 
     if(!regExName.test(values.firstname)) {
         errors.firstname="At least 2 characters [a-z] needed"
@@ -40,11 +41,12 @@ const validation = (values) => {
     if (validCounter === 3) {
         isValid = true
     }
-    console.log(validCounter)
-    console.log(isValid)
+    console.log(`valid counter = ${validCounter}, needs 3 to be valid`)
+    console.log(`Valid = ${isValid}`)
 
     if(isValid) {
-        alert('Customer Added!')
+        alert('Customer Added!')       
+
         let data = JSON.stringify({ 
             firstName: values.firstname, 
             lastName: values.lastname, 
@@ -66,6 +68,11 @@ const validation = (values) => {
         console.log('still not valid')
     }
 
+    if(isValid) {
+        values.firstname = ""
+        values.lastname = ""
+        values.email = ""
+    }
 
     return errors;
 

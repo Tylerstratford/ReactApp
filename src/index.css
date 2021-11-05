@@ -55,6 +55,11 @@ body {
   font-weight: 500;
 }
 
+.active {
+  color: #123C73;
+  filter: drop-shadow(1px 1px 2px rgb(0 0 0 / 0.4));
+}
+
 .logo {
   font-size: 3.5rem;
   color: #123C73;
@@ -95,6 +100,62 @@ body {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.titleHome {
+  font-size: 5rem;
+  color: #123C73;
+}
+
+.subtitleHome {
+  color: #7595BF;
+  font-size: 2.5rem;
+}
+
+.homeCard {
+  width: 1000px;
+  height: 550px;
+  /* background-color: white; */
+  margin-left: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.logoHome {
+  font-size: 25rem;
+  color: #123C73;
+  height: auto;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  transition-property: transform;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.homeCardLeft {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeCardRight {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .leftCard {
