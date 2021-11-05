@@ -115,7 +115,6 @@ body {
 .homeCard {
   width: 1000px;
   height: 550px;
-  /* background-color: white; */
   margin-left: 25px;
   border-radius: 15px;
   display: flex;
@@ -123,7 +122,6 @@ body {
   margin-top: 75px;
   margin-left: auto;
   margin-right: auto;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .logoHome {
@@ -133,7 +131,7 @@ body {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   transition-property: transform;
   animation-name: rotate;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
