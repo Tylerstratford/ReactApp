@@ -11,6 +11,7 @@ const validation = (values) => {
     let validCounter = 0
 
 
+    //First name
     if(!regExName.test(values.firstname)) {
         errors.firstname="At least 2 characters [a-z] needed"
         console.log(`first name: ${firstNameValid}`)
@@ -20,6 +21,7 @@ const validation = (values) => {
         validCounter++
     }
 
+    //Last name
     if(!regExName.test(values.lastname)) {
         errors.lastname="At least 2 characters [a-z] needed"
         console.log(`last name: ${lastNameValid}`)
@@ -29,6 +31,7 @@ const validation = (values) => {
         validCounter++
     }
     
+    //Email
     if(!regExEmail.test(values.email)) {
         errors.email="Email is invalid"
         console.log(`Email: ${emailValid}`)
@@ -41,9 +44,13 @@ const validation = (values) => {
     if (validCounter === 3) {
         isValid = true
     }
+
+    //Checkers
     console.log(`valid counter = ${validCounter}, needs 3 to be valid`)
     console.log(`Valid = ${isValid}`)
 
+
+    //IF all is valid -  send data
     if(isValid) {
         alert('Customer Added!')       
 
@@ -68,6 +75,7 @@ const validation = (values) => {
         console.log('still not valid')
     }
 
+    //If all is valid, data sent and data rinsed
     if(isValid) {
         values.firstname = ""
         values.lastname = ""
